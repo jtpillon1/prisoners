@@ -6,9 +6,11 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = 'The name the team gives to itself' # Only 10 chars displayed.
-strategy_name = 'The name the team gives to this strategy'
-strategy_description = 'How does this strategy decide?'
+team_name = 'JCC' # Only 10 chars displayed.
+strategy_name = '4th Quarter Push'
+strategy_description = 'Tit-for-Tat and after the first 100 rounds \
+                        then we maintain our strategy if in the lead or \
+                        betray every time if we are losing.'
     
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
